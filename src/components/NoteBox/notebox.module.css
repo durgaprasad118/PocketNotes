@@ -1,0 +1,137 @@
+.noteSection{
+    width: 100%;
+    background-color: #dae5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.noteSection img{
+    width: 35%;
+}
+.noteSection h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 20px 0;
+}
+.noteSection p{
+    width: 35%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.753);
+}
+.header{
+    height: 10vh;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.header i{
+    font-size: 30px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+.header .logo{
+    background-color: #0047ff;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 60px;
+	width: 60px;
+	font-size: 24px;
+	color: #fff;
+	font-weight: 500;
+    margin: 0 30px;
+}
+.header .name{
+    font-size: 20px;
+    font-weight: 500;
+}
+.allNotes{
+    width: 100%;
+    height: 70vh;
+    padding: 40px;
+    overflow-y: auto;
+}
+.allNotes::-webkit-scrollbar {
+	width: 10px;
+}
+
+.allNotes::-webkit-scrollbar-track {
+    border-radius: 4.5px;
+	background: #51555b;
+}
+
+.allNotes::-webkit-scrollbar-thumb {
+	border: 1px solid #d9d9d9;
+	border-radius: 4.5px;
+    background-color: #ffffffe8;
+    
+}
+.note{
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 4px 20px 0px #00000040;
+    padding: 20px;
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.note:last-child{
+    margin-bottom: 0;
+}
+.noteTime{
+    text-align: right;
+    font-size: 11px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+.noteTime span{
+    width: 8px;
+    height: 8px;
+    background-color: #000;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 8px;
+}
+
+.addNote{
+    width: 100%;
+    height: 20vh;
+    background-color: #001f8b;
+    padding: 20px;
+}
+.addNote textarea{
+    width: 100%;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    height: 100%;
+    border-radius: 9px;
+    position: relative;
+}
+
+.addNote button{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.507);
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+}
+#back{
+    display: none;
+}
+@media only screen and (width < 1100px){
+    #back{
+        display: inherit;
+    }
+}
